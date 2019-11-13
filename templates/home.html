@@ -11,22 +11,25 @@
     <title>Document</title>
 </head>
 <body>
-    <div></div>
+    <nav>
+       <button class="admin-button" onclick="window.location.replace('/admin')">Ir para admi</button>     
+    </nav>
     <h1>Daniel França</h1>
     <section class="s1">
             <img class="foto" src="https://lh3.googleusercontent.com/-c9KNZ5EMISI/XarkR139u8I/AAAAAAAAAEI/grbDNvI4A1sHKngqpoWGl0kzU3oSwk4JgCEwYBhgL/w140-h140-p/2019-10-19.jpg" alt="Qualquer coisa">
-
     </section>
     <h2>Quem é Daniel ?</h2>
-    <section class="s2">
-            
-            <p>Ele é estudante do primeiro periodo de ABI engenharia e que gosta de aprender coisas novas.</p>
-            <ul>
-                <h3>lista de habilidades</h3>
-                <li>Resolve o cubo magico em menos de 1 minuto.</li>
-                <li>Fala inglês e um pouco de japones e frances.</li>
-                <li>sabe fazer origami</li>
-            </ul>
+    <section class="s2">          
+        <p>Ele é estudante do primeiro periodo de ABI engenharia e que gosta de aprender coisas novas.</p>
+        <ul>
+            <h3>lista de habilidades</h3>
+            <li>Resolve o cubo magico em menos de 1 minuto.</li>
+            <li>Fala inglês e um pouco de japones e frances.</li>
+            <li>sabe fazer origami</li>  
+            {% for habilidade in habilidades %}
+            <li>{{ habilidade }}</li>
+            {% endfor %}           
+        </ul>
     </section>
     <section class="s3">
         <ul>
@@ -35,7 +38,7 @@
             <li>Quebrendo a caixa </li>
             <li>Porta dos fundos</li>
             {% for canal in Canais %}
-            <h1>{{ canal }} </h1>
+            <li>{{ canal }}</li>
             {% endfor %}
         </ul>
     </section>
@@ -46,14 +49,10 @@
             <li>Um problema é apenas uma oportunidade ainda não aproveitada.</li>
             <li>Não espere ter resultados diferentes fazendo as mesmas coisas. </li>
             {% for frase in Frases %}
-            <h1> {{ frase }} </h1>
-            {% endfor %}
-           
+            <li> {{ frase }}</li>
+            {% endfor %}     
         </ul>
     </section>
-    <button class="admin-button" onclick="window.location.replace('/admin')">Admin</button>
-    <footer>
-        <div></div>
-    </footer>
+    <footer></footer>
 </body>
 </html>

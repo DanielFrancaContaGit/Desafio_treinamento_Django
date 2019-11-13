@@ -13,3 +13,9 @@ class Frases(models.Model):
 
     def __str__(self):
         return self.frase
+
+class Habilidades(models.Model):
+    habilidade = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.habilidade

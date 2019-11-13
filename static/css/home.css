@@ -1,16 +1,22 @@
 body{
     margin: 0%;
+    background-color: #2BD957;
 }
 
-div{
-    background: rgba(0, 0, 0, 0.5);
+nav{
+    display: flex;
+    background: #360259;
     height: 50px;
+    justify-content: flex-end; 
+    align-content: center;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.493);
 }
+
 h1{
     font-family: 'Yeon Sung', cursive;
     font-family: 'Play', sans-serif;
     font-family: 'Metal Mania', cursive;
-    color: rgba(0, 0, 255, 0.548);
+    color: #360259;
     text-align: center;
 }
 
@@ -18,12 +24,18 @@ h2{
     font-family: 'Yeon Sung', cursive;
     font-family: 'Play', sans-serif;
     font-family: 'Metal Mania', cursive;
-    border: 5px solid black;
+    border: 5px solid #360259;
     border-radius: 20px;
     text-align: center;
+    color: #360259;
     width: 700PX;
     margin: auto;
     margin-top: 15px;
+    background-color: #8404D9;
+}
+h3{
+    color: #360259;
+    
 }
 
 p{
@@ -40,8 +52,9 @@ li{
     text-align: center;
 }
 .foto{
-    /*margin-left: 725px;*/
     box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.493);
+    border-radius: 50%;
+    border:5px solid #360259;
 }
 
 .s1{
@@ -53,44 +66,52 @@ li{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    border: 5PX solid rgba(255, 0, 0, 0.877);
+    border: 5PX solid #360259;
     width: 700px;
     margin:auto;
     margin-top: 20px;
     border-radius: 20px;
     background: rgba(0, 0, 0, 0.096);
+    background-color: #8404D9;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.493);
 }
 
 .s3{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    border: 5PX solid rgba(229, 255, 0, 0.877);
+    border: 5PX solid #360259;
     width: 700px;
     margin:auto;
     margin-top: 20px;
     border-radius: 20px;
-    background: rgba(0, 0, 0, 0.096);
+    background-color: #8404D9;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.493);
 }
 .s4{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    border: 5PX solid rgba(255, 166, 0, 0.842);
+    border: 5PX solid #360259;
     width: 700px;
     margin:auto;
     margin-top: 20px;
     border-radius: 20px;
-    background: rgba(0, 0, 0, 0.096);
+    background-color: #8404D9;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.493);
 }
 .admin-button {
     text-decoration: none;
     padding: 10px 5px;
-    background-color: turquoise;
-    border: none;
-    border-radius: 10px;
+    background-color: #2BD957;
+    border: 5px solid #360259;
+    border-radius: 15px;
     color: black;
+    width: 100px;
+   
 }
 footer{
     margin-top: 20px;
+    background:#360259;
+    height: 50px;
 }
