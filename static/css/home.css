@@ -1,0 +1,96 @@
+body{
+    margin: 0%;
+}
+
+div{
+    background: rgba(0, 0, 0, 0.5);
+    height: 50px;
+}
+h1{
+    font-family: 'Yeon Sung', cursive;
+    font-family: 'Play', sans-serif;
+    font-family: 'Metal Mania', cursive;
+    color: rgba(0, 0, 255, 0.548);
+    text-align: center;
+}
+
+h2{
+    font-family: 'Yeon Sung', cursive;
+    font-family: 'Play', sans-serif;
+    font-family: 'Metal Mania', cursive;
+    border: 5px solid black;
+    border-radius: 20px;
+    text-align: center;
+    width: 700PX;
+    margin: auto;
+    margin-top: 15px;
+}
+
+p{
+    font-family: 'Play', sans-serif;
+    text-align: center;
+}
+
+ul{
+    font-family: 'Play', sans-serif;
+    text-align: center;
+}
+li{
+    font-family: 'Play', sans-serif;
+    text-align: center;
+}
+.foto{
+    /*margin-left: 725px;*/
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.493);
+}
+
+.s1{
+    display: flex;
+    justify-content: center;
+}
+
+.s2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 5PX solid rgba(255, 0, 0, 0.877);
+    width: 700px;
+    margin:auto;
+    margin-top: 20px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.096);
+}
+
+.s3{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 5PX solid rgba(229, 255, 0, 0.877);
+    width: 700px;
+    margin:auto;
+    margin-top: 20px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.096);
+}
+.s4{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 5PX solid rgba(255, 166, 0, 0.842);
+    width: 700px;
+    margin:auto;
+    margin-top: 20px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.096);
+}
+.admin-button {
+    text-decoration: none;
+    padding: 10px 5px;
+    background-color: turquoise;
+    border: none;
+    border-radius: 10px;
+    color: black;
+}
+footer{
+    margin-top: 20px;
+}

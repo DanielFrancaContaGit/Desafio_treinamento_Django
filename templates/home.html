@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}"> 
+    <link href="https://fonts.googleapis.com/css?family=Play|Yeon+Sung&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Metal+Mania|Play|Yeon+Sung&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div></div>
+    <h1>Daniel França</h1>
+    <section class="s1">
+            <img class="foto" src="https://lh3.googleusercontent.com/-c9KNZ5EMISI/XarkR139u8I/AAAAAAAAAEI/grbDNvI4A1sHKngqpoWGl0kzU3oSwk4JgCEwYBhgL/w140-h140-p/2019-10-19.jpg" alt="Qualquer coisa">
+
+    </section>
+    <h2>Quem é Daniel ?</h2>
+    <section class="s2">
+            
+            <p>Ele é estudante do primeiro periodo de ABI engenharia e que gosta de aprender coisas novas.</p>
+            <ul>
+                <h3>lista de habilidades</h3>
+                <li>Resolve o cubo magico em menos de 1 minuto.</li>
+                <li>Fala inglês e um pouco de japones e frances.</li>
+                <li>sabe fazer origami</li>
+            </ul>
+    </section>
+    <section class="s3">
+        <ul>
+            <h3>Canais favoitos do youtube</h3>
+            <li>Quadro em branco </li>
+            <li>Quebrendo a caixa </li>
+            <li>Porta dos fundos</li>
+            {% for canal in Canais %}
+            <h1>{{ canal }} </h1>
+            {% endfor %}
+        </ul>
+    </section>
+    <section class="s4">
+        <ul>
+            <h3>Frases</h3>
+            <li>Uma pessoa criativa é a que não deixou a criança interios morrer.</li>
+            <li>Um problema é apenas uma oportunidade ainda não aproveitada.</li>
+            <li>Não espere ter resultados diferentes fazendo as mesmas coisas. </li>
+            {% for frase in Frases %}
+            <h1> {{ frase }} </h1>
+            {% endfor %}
+           
+        </ul>
+    </section>
+    <button class="admin-button" onclick="window.location.replace('/admin')">Admin</button>
+    <footer>
+        <div></div>
+    </footer>
+</body>
+</html>
