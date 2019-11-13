@@ -32,6 +32,7 @@ h2{
     margin: auto;
     margin-top: 15px;
     background-color: #8404D9;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.493);
 }
 h3{
     color: #360259;

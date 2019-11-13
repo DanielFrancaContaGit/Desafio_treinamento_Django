@@ -13,7 +13,7 @@ class HomeViews(generic.TemplateView):
         context = super().get_context_data(**kwargs) 
         context['Canais'] = Canais.objects.all()
         context['Frases'] = Frases.objects.all()
-        context['Habilidade'] = Habilidades.objects.all()
+        context['Habilidades'] = Habilidades.objects.all()
         return context
 
    
